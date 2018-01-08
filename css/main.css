@@ -3,3 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.high {
+  height: 100vh;
+}
+
+.container-flex-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-down {
+  bottom: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+.navbar-down .material-icons {
+  font-size: 2.5em;
+}
