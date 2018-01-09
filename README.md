@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Speak up!
 
 Speak up! esta pensada para aquellas personas que estudian o tiene conocimiento de algún idioma y quieren practicarlo conversando con personas nativas alrededor del mundo.
@@ -23,3 +24,7 @@ Speak up! esta pensada para aquellas personas que estudian o tiene conocimiento 
 ## Desarrollado con:
 
 `HTML5` `Jquery` `CSS3` `Materialize` `Firebase`
+=======
+# SPEAK UP (RED SOCIAL) :
+
+>>>>>>> f9453a00cda234b3ecd04ceb95a1895c794a0f4e
