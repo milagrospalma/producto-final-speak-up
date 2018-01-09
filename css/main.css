@@ -4,11 +4,78 @@
   box-sizing: border-box;
 }
 
-/* Newsfeed - Profile */
+/* splash - login */
+.opacity {
+  background: rgba(3, 3, 3, 0.1);
+  height: 100vh;
+  width: 100vw;
+}
+
+#welcome {
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;  
+}
+
+.speak {
+  font-family: 'Passion One', cursive;
+  font-size: 6em; 
+}
+
+.bg-city {
+  background-image: url('../assets/images/giphy.gif');  
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center center;
+}
 
 .vh100 {
   height: 100vh;
 }
+
+.vh10 {
+  height: 10vh;
+}
+
+.c-white {
+  color: #fff;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item-flex{
+	display: flex;
+	align-self: center;
+}
+
+.m-top15 {
+	margin-top: 15vh;
+}
+
+.vw100{
+  width: 100vw;
+}
+
+/*clases para login.html*/
+.navbar-high {
+  top: 0;
+  position: fixed;
+  z-index: 997;
+  font-family: 'Passion One', cursive;  
+  font-size: 3em;
+}
+
+.navbar-down {
+  bottom: 0;
+  position: fixed;
+  z-index: 997;
+}
+
+/* Newsfeed - Profile */
 
 .container-flex-row {
   display: flex;
@@ -18,12 +85,6 @@
 
 .jc-between {
   justify-content: space-between;
-}
-
-.navbar-down {
-  bottom: 0;
-  position: fixed;
-  z-index: 997;
 }
 
 .navbar-down .material-icons {
@@ -46,4 +107,19 @@
 
 .content {
   margin-bottom: 5em;
+}
+
+.container-flex-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carousel {
+  margin-top: 15vh;
+}
+
+#team {
+  height: 13vh;
+  width: 13vw;
 }
