@@ -12,20 +12,22 @@
 
 <body class="high">
   <!-- Navbar -->
-  <div class="navbar-fixed">
+  <div class="navbar-fixed nav-style">
     <nav>
-      <div class="nav-wrapper">
-        <button class="btn material-icons left">menu</button>
-        <a href="#" class="brand-logo">Search</a>
+      <div class="nav-wrapper ">
+        <a class="btn-style material-icons left">arrow_back</a>
+        <h4 class >Search</h4>
       </div>
     </nav>
   </div>
+
+  
   <main class="container">
     <!-- Input -->   
-    <h3>I want to practice</h3>
+    <h4 class="center-align">I want to practice</h4>
     <div class="input-field col s12">
       <select>
-        <option value="" disabled selected>Elige tu idioma</option>
+        <option value="0" disabled selected>Elige tu idioma</option>
         <option value="1" data-icon="../assets/icon/United.png" >Inglés</option>
         <option value="2" data-icon="../assets/icon/France.png">Frances</option>
         <option value="3" data-icon="../assets/icon/Italy.png">Italiano</option>
@@ -34,33 +36,35 @@
     </div>
     <!-- Container friends -->
     <div class="friend-box">
-      <div class="friends">  
+      <div class="friends" data-target="modal1" class="modal-trigger">  
+        <!-- El data target aquí activara los modales -->
       </div>
     </div>
   </main>
    <!-- Modal Trigger -->
-   <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+   <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+   <button data-target="modal1" class="btn modal-trigger">Modal</button> -->
 
    <!-- Modal Structure -->
-   <div id="modal1" class="modal">
-     <div class="modal-content">
-       <h4>Modal Header</h4>
-       <p>A bunch of text</p>
-     </div>
-     <div class="modal-footer">
-       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-     </div>
-   </div>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
            
   <!-- Menu-bottom -->
   <div class="navbar-down">
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container-flex-row">
-          <a class="material-icons">message</a>
-          <a class="material-icons">home</a>
-          <a class="material-icons">search</a>
-          <a class="material-icons">person</a>
+          <a href="../views/messages.html" class="material-icons icon-style">message</a>
+          <a href="../views/newsfeed.html"class="material-icons icon-style">home</a>
+          <a href="../views/search.html" class="material-icons icon-style">search</a>
+          <a href="../views/profile.html" class="material-icons icon-style">person</a>
         </div>
       </nav>
     </div>

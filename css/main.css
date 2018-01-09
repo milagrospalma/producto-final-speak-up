@@ -3,14 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* .material-icons{
-  color: #fff;
-} */
 
-/* .high {
+.high {
   height: 100vh;
-} */
-
+}
 
 /* navbar down */
 .container-flex-row {
@@ -21,4 +17,15 @@
   bottom: 0;
   position: fixed;
   z-index: 1000;
+}
+
+.left{
+  margin-left: .5em;
+  margin-right: .5em;
+}
+.collection{
+  padding-bottom: 3em;
+}
+.icon-style{
+  padding-top: .6em;
 }
