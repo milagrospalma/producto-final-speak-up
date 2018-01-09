@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-.high {
+/* Newsfeed - Profile */
+
+.vh100 {
   height: 100vh;
 }
 
@@ -14,8 +16,8 @@
   align-items: center;
 }
 
-.item-flex {
-  display: flex;
+.jc-between {
+  justify-content: space-between;
 }
 
 .navbar-down {
@@ -36,4 +38,12 @@
 .photo img {
   width: 30%;
   border-radius: 100%;
+}
+
+.space {
+  margin: 0.5em;
+}
+
+.content {
+  margin-bottom: 5em;
 }
