@@ -15,60 +15,89 @@
     <!-- Navbar -->
     <div class="navbar-fixed">
       <nav>
-        <div class="nav-wrapper">
-          <button class="btn material-icons left">arrow_back</button>
-          <h3>Nombre</h3>
+        <div class="nav-wrapper container-flex-row left">
+          <a class="material-icons left">arrow_back</a>
+          <h4>Perfil</h4>
         </div>
       </nav>
     </div>
     <!-- Content -->
     <div id="content">
-      <div class="photo">
-        <img src="../assets/images/user.svg" alt="Foto">
-      </div>
       <div class="container">
-        <div class="information">
-          <h5>?</h5>
-          <ul>
-            <li>
-              <span>genero</span>
-              <p>Femenino</p>
-            </li>
-            <li>
-              <span class="fa fa-globe"></span>
-              <p>Edad/cumpleaños</p>
-            </li>
-            <li>
-              <span>mundo</span>
-              <p>País</p>
-            </li>
-          </ul>
+        <div class="row">
+          <div class="col s12">
+            <div class="photo container-flex-row">
+              <img src="../assets/images/user.svg" alt="Foto">
+            </div>
+          </div>
         </div>
-        <div class="biography">
-          <h5>Biografía</h5>
-          <p>Lorem ipsum dolor sit amet consecteturasdkfjaslkdfjsakdfjasatem?</p>
+        <div class="row">
+          <div class="col offset-s1 s10">
+            <div class="information">
+              <div class="input-field">
+                <input type="text" class="validate dropdown-button" data-activates='dropdown1'>
+                <label>Sexo</label>
+                <ul id='dropdown1' class='dropdown-content'>
+                  <li>
+                    <a href="#!" data-gender="fa fa-venus">Femenino</a>
+                  </li>
+                  <li>
+                    <a href="#!" data-gender="fa fa-mars">Masculino</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="birthday">
+                <span class="fa fa-birthday-cake"></span>
+                <p>Cumpleaños</p>
+              </div>
+              <div class="country">
+                <span class="fa fa-globe"></span>
+                <p>País</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="language">
-          <h5>Idiomas</h5>
-          <ul>
-            <li>
-              <h6>Nativo</h6>
-              <p><span>Bandera</span> Idioma</p>
-            </li>
-            <li>
-              <h6>Aprendiendo</h6>
-              <p>
-                <span>Bandera</span> Idioma</p>
-            </li>
-          </ul>
+        <hr>
+        <div class="row">
+          <div class="col offset-s1 s10">
+            <div class="language">
+              <h5>Idiomas</h5>
+              <ul>
+                <li>
+                  <h6>Nativo</h6>
+                  <p>
+                    <span>Bandera</span> Idioma</p>
+                </li>
+                <li>
+                  <h6>Aprendiendo</h6>
+                  <p>
+                    <span>Bandera</span> Idioma</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="like">
-          <h5>Temas de interés</h5>
-          <ul>
-            <li>Topic1</li>
-            <li>Topic2</li>
-            <li>Topic3</li>
-          </ul>
+        <hr>
+        <div class="row">
+          <div class="col offset-s1 s10">
+            <div class="biography">
+              <h5>Sobre mí</h5>
+              <p>Lorem ipsum dolor sit amet consecteturasdkfjaslkdfjsakdfjasatem?</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col offset-s1 s10">
+            <div class="like">
+              <h5>Me interesa</h5>
+              <ul>
+                <li>Topic1</li>
+                <li>Topic2</li>
+                <li>Topic3</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
