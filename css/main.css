@@ -3,57 +3,72 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* splash - login */
 .opacity {
   background: rgba(3, 3, 3, 0.1);
   height: 100vh;
   width: 100vw;
 }
+
 #welcome {
   font-family: 'Pacifico', cursive;
   font-size: 3em;  
 }
+
 .speak {
   font-family: 'Passion One', cursive;
   font-size: 6em; 
 }
+
 .bg-city {
   background-image: url('../assets/images/giphy.gif');  
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position:center center;
 }
+
 .vh100 {
   height: 100vh;
 }
+
 .vh10 {
   height: 10vh;
 }
+
 .c-white {
   color: #fff;
 }
+
 .flex {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 }
+
 .item-flex{
 	display: flex;
 	align-self: center;
 }
+
 .m-top15 {
 	margin-top: 15vh;
 }
+
 .vw100{
   width: 100vw;
 }
+
 /*clases para login.html*/
 .font-1 {
   font-family: 'Passion One', cursive;  
 }
+
 .m-top8{
   margin-top: 8vh;
 }
+
 .navbar-high {
   top: 0;
   position: fixed;
@@ -61,53 +76,67 @@
   font-family: 'Passion One', cursive;  
   font-size: 3em;
 }
+
+/* Newsfeed - Profile */
+
 .container-flex-row {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.m-top15 {
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.navbar-down .material-icons {
+  font-size: 2em;
+}
+
+.photo {
+  background-color: #F6F6F6;
+  height: 30vh;
+}
+
+.photo img {
+  width: 30%;
+  border-radius: 100%;
+}
+
+.space {
+  margin: 0.5em;
+}
+
+.content {
+  margin-bottom: 5em;
+}
+
+.carousel {
   margin-top: 15vh;
 }
-.m-top5 {
-  margin-top: 5vh;
-}
+
 #team {
   height: 13vh;
   width: 13vw;
 }
-.bg-books {
-  background-image: url('../assets/images/books.svg');
-  background-position: left left;
+
+/* navbar down */
+
+.navbar-down {
+  bottom: 0;
+  position: fixed;
+  z-index: 1000;
 }
-.bg-img {
-  background-repeat: no-repeat;
-  height: 23vh;
-  width: 23vh;
-  background-size: cover;
-  display: inline-block
+
+.left {
+  margin-left: .5em;
+  margin-right: .5em;
 }
-.bg-world {
-  background-image: url('../assets/images/world.svg');
-  background-position: right right;
+
+.collection {
+  margin-bottom: 3em;
 }
-.bg-pc {
-  background-image: url('../assets/images/pcwithmes.svg');
-  background-position: left left;
-}
-.bg-phone {
-  background-image: url('../assets/images/mobilecontac.svg');
-  background-position: right right;
-}
-.bg-ubication {
-  background-image: url('../assets/images/worldubication.svg');
-  background-position: left left;
-}
-.bg-people {
-  background-image: url('../assets/images/equipo.svg');
-  background-position: right right;
-}
-.user{
-  height: 11vh;
-  width: 20vh;
+
+.icon-style {
+  padding-top: .6em;
 }
