@@ -20,14 +20,14 @@ Speak up! esta pensada para aquellas personas que estudian o tiene conocimiento 
 ## Flujo de la aplicación 
 
 ### Sketch
-![botones de Control](assets/images/1.VISTA SPLASH.png)
-![botones de Control](assets/images/2.VISTA LOGIN.png)
-![botones de Control](assets/images/3.VISTA NEWSFEED.png)
-![botones de Control](assets/images/4.VISTA SEARCH.png)
-![botones de Control](assets/images/5.VISTA SEARCH 2.png)
-![botones de Control](assets/images/6.VISTA MODAL SEARCH.png)
-![botones de Control](assets/images/7.VISTA USER.png)
-![botones de Control](assets/images/7.VISTA USER2.png)
+![botones de Control](assets/images/1.png)
+![botones de Control](assets/images/2.png)
+![botones de Control](assets/images/3.png)
+![botones de Control](assets/images/4.png)
+![botones de Control](assets/images/5.png)
+![botones de Control](assets/images/6.png)
+![botones de Control](assets/images/7.png)
+![botones de Control](assets/images/8.png)
 
 ## Desarrollado con:
 
