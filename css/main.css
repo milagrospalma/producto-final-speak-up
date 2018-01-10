@@ -48,6 +48,12 @@
   width: 100vw;
 }
 /*clases para login.html*/
+.font-1 {
+  font-family: 'Passion One', cursive;  
+}
+.m-top8{
+  margin-top: 8vh;
+}
 .navbar-high {
   top: 0;
   position: fixed;
@@ -55,23 +61,53 @@
   font-family: 'Passion One', cursive;  
   font-size: 3em;
 }
-.navbar-down {
-  bottom: 0;
-  position: fixed;
-  z-index: 997;
-}
-.navbar-down .material-icons {
-  font-size: 2em;
-}
 .container-flex-row {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.carousel {
+.m-top15 {
   margin-top: 15vh;
+}
+.m-top5 {
+  margin-top: 5vh;
 }
 #team {
   height: 13vh;
   width: 13vw;
+}
+.bg-books {
+  background-image: url('../assets/images/books.svg');
+  background-position: left left;
+}
+.bg-img {
+  background-repeat: no-repeat;
+  height: 23vh;
+  width: 23vh;
+  background-size: cover;
+  display: inline-block
+}
+.bg-world {
+  background-image: url('../assets/images/world.svg');
+  background-position: right right;
+}
+.bg-pc {
+  background-image: url('../assets/images/pcwithmes.svg');
+  background-position: left left;
+}
+.bg-phone {
+  background-image: url('../assets/images/mobilecontac.svg');
+  background-position: right right;
+}
+.bg-ubication {
+  background-image: url('../assets/images/worldubication.svg');
+  background-position: left left;
+}
+.bg-people {
+  background-image: url('../assets/images/equipo.svg');
+  background-position: right right;
+}
+.user{
+  height: 11vh;
+  width: 20vh;
 }

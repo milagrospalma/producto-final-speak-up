@@ -1,2 +1,0 @@
-# SPEAK UP (RED SOCIAL) :
-
