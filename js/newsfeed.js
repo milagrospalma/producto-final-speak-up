@@ -4,7 +4,7 @@ $(document).ready(function() {
   var content = $('#content')
 
   $write.on('click', function(e){ 
-      $('#post-box').toggleClass('hide');
+    $('#post-box').toggleClass('hide');
   })
 
   textarea.on('input', function(event) {
