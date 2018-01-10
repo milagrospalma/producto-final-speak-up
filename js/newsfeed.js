@@ -18,7 +18,7 @@ $(document).ready(function() {
   $('.btn').on('click', function(e){
     event.preventDefault(e)
     var info = textarea.val();
-    content.prepend('<div class= "border">'+ info + "</div>");
+    content.prepend('<textarea class= "border">'+ info + "</textarea>");
     textarea.val("")
     $('.btn').attr('disabled', true);
   })
