@@ -19,26 +19,28 @@
         <div class="nav-wrapper container-flex-row jc-between">
           <a href="#" class="material-icons left space">menu</a>
           <a href="#" class="brand-logo">Newsfeed</a>
-          <a href="#" class="material-icons right space">create</a>
+          <a href="#" class="material-icons right space" id="write" >create</a>
         </div>
       </nav>
     </div>
     <!-- Header -->
-    <div class="hide">
+    <div class="hide" id="post-box">
       <div class="row">
         <form class="col s12">
           <div class="row">
             <div class="input-field col s12">
               <textarea id="textarea1" class="materialize-textarea"></textarea>
               <label for="textarea1">¿Qué quieres compartir?</label>
-              <a class="btn">Publicar</a>
+              <a class="btn" disabled >Publicar</a>
             </div>
           </div>
         </form>
       </div>
     </div>
     <!-- Content -->
-    <div id="content" class="content"></div>
+    <div class="container">
+      <div id="content" class=" col s12 content"></div>
+    </div>
     <!-- Menu-bottom -->
     <div class="navbar-down">
       <div class="navbar-fixed">
@@ -56,6 +58,7 @@
   <!-- Scripts -->
   <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <script src="../js/newsfeed.js"></script>
 </body>
 
 </html>

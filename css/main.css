@@ -157,7 +157,12 @@
 .content {
   margin-bottom: 5em;
 }
-
+.border{
+  border: 1px solid #BEBEBE;
+  border-radius: 5px;
+  padding: .5em .7em;
+  margin-bottom: .8em;
+}
 .carousel {
   margin-top: 15vh;
 }
