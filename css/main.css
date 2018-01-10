@@ -3,8 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* splash - login */
 .opacity {
   background: rgba(3, 3, 3, 0.1);
   height: 100vh;
@@ -76,31 +74,13 @@
   font-family: 'Passion One', cursive;  
   font-size: 3em;
 }
-
-/* Newsfeed - Profile */
-
 .container-flex-row {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
-.jc-between {
-  justify-content: space-between;
-}
-
-.navbar-down .material-icons {
-  font-size: 2em;
-}
-
-.photo {
-  background-color: #F6F6F6;
-  height: 30vh;
-}
-
-.photo img {
-  width: 30%;
-  border-radius: 100%;
+.m-top15 {
+  margin-top: 15vh;
 }
 
 .space {
@@ -119,24 +99,38 @@
   height: 13vh;
   width: 13vw;
 }
-
-/* navbar down */
-
-.navbar-down {
-  bottom: 0;
-  position: fixed;
-  z-index: 1000;
+.bg-books {
+  background-image: url('../assets/images/books.svg');
+  background-position: left left;
 }
-
-.left {
-  margin-left: .5em;
-  margin-right: .5em;
+.bg-img {
+  background-repeat: no-repeat;
+  height: 23vh;
+  width: 23vh;
+  background-size: cover;
+  display: inline-block
 }
-
-.collection {
-  margin-bottom: 3em;
+.bg-world {
+  background-image: url('../assets/images/world.svg');
+  background-position: right right;
 }
-
-.icon-style {
-  padding-top: .6em;
+.bg-pc {
+  background-image: url('../assets/images/pcwithmes.svg');
+  background-position: left left;
+}
+.bg-phone {
+  background-image: url('../assets/images/mobilecontac.svg');
+  background-position: right right;
+}
+.bg-ubication {
+  background-image: url('../assets/images/worldubication.svg');
+  background-position: left left;
+}
+.bg-people {
+  background-image: url('../assets/images/equipo.svg');
+  background-position: right right;
+}
+.user{
+  height: 11vh;
+  width: 20vh;
 }
