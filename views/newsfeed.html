@@ -31,6 +31,9 @@
             <div class="input-field col s12">
               <textarea id="textarea1" class="materialize-textarea"></textarea>
               <label for="textarea1">¿Qué quieres compartir?</label>
+              <form >
+                <input type="file" name="pic" accept="image/*" class="select-img" >
+              </form>
               <a class="btn" disabled >Publicar</a>
             </div>
           </div>
@@ -39,7 +42,8 @@
     </div>
     <!-- Content -->
     <div class="container">
-      <div id="content" class=" col s12 content"></div>
+      <div id="content" class=" col s12 content">
+      </div>
     </div>
     <!-- Menu-bottom -->
     <div class="navbar-down">
@@ -58,6 +62,7 @@
   <!-- Scripts -->
   <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
   <script src="../js/newsfeed.js"></script>
 </body>
 
