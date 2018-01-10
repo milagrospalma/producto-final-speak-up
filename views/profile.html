@@ -24,7 +24,7 @@
       </nav>
     </div>
     <!-- Content -->
-    <div id="content" class="content">
+    <div id="content" class="content data-form">
       <div class="container">
         <div class="row">
           <div class="col s12">
@@ -34,19 +34,21 @@
           </div>
         </div>
         <div class="row">
+          <div class="col s12 center-align">
+            <a class="waves-effect waves-light btn"><i class="fa fa-camera white-text" aria-hidden="true"></i> + Profile picture</a>                 
+          </div>
+        </div>
+        <div class="row">
           <div class="col offset-s1 s10">
             <div class="information">
               <div class="input-field">
-                <input placeholder="Femenino/Masculino" id="gender" type="text" class="validate dropdown-button" data-activates='dropdown1'>
+                <select>
+                  <option value="" disabled selected>Elige una ópcion</option>
+                  <option value="1">Femenino</option>
+                  <option value="2">Maculino</option>
+                  <option value="3">Otro</option>
+                </select>
                 <label>Sexo</label>
-                <ul id='dropdown1' class='dropdown-content'>
-                  <li>
-                    <a href="#!" data-gender="fa fa-venus">Femenino</a>
-                  </li>
-                  <li>
-                    <a href="#!" data-gender="fa fa-mars">Masculino</a>
-                  </li>
-                </ul>
               </div>
               <div class="birthday">
                 <div class="input-field">
@@ -105,8 +107,64 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col s12 center-align">
+            <button class="btn waves-effect waves-light" type="submit" name="action" id="btnsave"disabled>Save
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
+
+
+    <!-- Profile create-->
+    <div class="container all-information">
+      <div class="container principal">
+        <div class="row">
+          <div class="col s4">
+            <img src="" alt="">
+          </div>
+          <div class="col s8">
+            <div class="name"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container information">
+        <div class="row">
+          <div class="col s12">
+            <div class="col s4" id="divsex">
+              <p>Sexo :</p>
+            </div>
+            <div class="col s4" id="divbirthday">
+              <p>Cumpleaños :</p>
+            </div>
+            <div class="col s4">
+              <p>País :</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <div class="col s4">
+              <p>Mi idioma nativo :</p>
+            </div>
+            <div class="col s4">
+              <p>Quiero aprender :</p>
+            </div>
+            <div class="col s4">
+              <p>Sobre mi :</p>
+            </div>  
+          </div>
+        </div>      
+        <div class="row">
+          <div class="col s12">
+            <p>Me interesa :</p>
+          </div>
+        </div>    
+      </div>   
+    </div>
+
     <!-- Menu-bottom -->
     <div class="navbar-down">
       <div class="navbar-fixed">
