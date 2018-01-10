@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
   <link rel="stylesheet" href="../css/main.css">
   <title>Search</title>
 </head>
-
 <body class="high">
   <!-- Navbar -->
   <div class="navbar-fixed nav-style">
@@ -21,8 +19,6 @@
       </div>
     </nav>
   </div>
-
-
   <main class="container">
     <!-- Input -->
     <h4 class="center-align">I want to practice</h4>
@@ -30,33 +26,17 @@
       <select>
         <option value="0" disabled selected>Elige tu idioma</option>
         <option value="1" data-icon="../assets/icon/United.png">Inglés</option>
-        <option value="2" data-icon="../assets/icon/France.png">Frances</option>
+        <option value="2" data-icon="../assets/icon/France.png">Francés</option>
         <option value="3" data-icon="../assets/icon/Italy.png">Italiano</option>
       </select>
-      <!-- <label></label> -->
     </div>
     <!-- Container friends -->
-    <div class="friend-box">
-      <div class="friends" data-target="modal1" class="modal-trigger">
-        <!-- El data target aquí activara los modales -->
+    <div id="container-friends" class="friend-box">
+      <!-- Modal Trigger -->
+      <div id="user" href="#modal1" data-target="modal1" class="modal-trigger">
       </div>
     </div>
   </main>
-  <!-- Modal Trigger -->
-  <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-   <button data-target="modal1" class="btn modal-trigger">Modal</button> -->
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
-
   <!-- Menu-bottom -->
   <div class="navbar-down">
     <div class="navbar-fixed">
@@ -70,9 +50,20 @@
       </nav>
     </div>
   </div>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>User</h4>
+      <p>Information</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Seguir</a>
+    </div>
+  </div>
   <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  <script src="../js/firebase.js"></script>
   <script src="../js/search.js"></script>
 </body>
-
 </html>
