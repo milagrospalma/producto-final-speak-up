@@ -1,5 +1,3 @@
-$(document).ready(function() {
-  setTimeout(function() {
-window.location.href = 'views/login.html'
-;}, 3500);
-});
+$(document).ready(function(){
+	setTimeout(function(){window.location.href = 'views/login.html'},5000);
+})
