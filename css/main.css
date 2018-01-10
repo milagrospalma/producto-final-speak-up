@@ -4,67 +4,72 @@
   box-sizing: border-box;
 }
 
+/* splash - login */
 .opacity {
   background: rgba(3, 3, 3, 0.1);
   height: 100vh;
   width: 100vw;
 }
+
 #welcome {
   font-family: 'Pacifico', cursive;
   font-size: 3em;  
 }
+
 .speak {
   font-family: 'Passion One', cursive;
   font-size: 6em; 
 }
+
 .bg-city {
   background-image: url('../assets/images/giphy.gif');  
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position:center center;
 }
+
 .vh100 {
   height: 100vh;
 }
+
 .vh10 {
   height: 10vh;
 }
+
 .c-white {
   color: #fff;
 }
+
 .flex {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 }
+
 .item-flex{
 	display: flex;
 	align-self: center;
 }
+
 .m-top15 {
 	margin-top: 15vh;
 }
+
 .vw100{
   width: 100vw;
 }
+
 /*clases para login.html*/
-.bg-login {
-  background: rgba(0, 0, 0, 0.63);
-  height: 100vh;
-  width: 100vw;
-}
-#speakup {
-  font-family: 'Passion One', cursive;
-}
-#team {
-  height: 13vh;
-  width: 13vw;
+.navbar-high {
+  top: 0;
+  position: fixed;
+  z-index: 997;
+  font-family: 'Passion One', cursive;  
+  font-size: 3em;
 }
 
-.high {
-  height: 100vh;
-}
+/* Newsfeed - Profile */
 
 .container-flex-row {
   display: flex;
@@ -72,14 +77,8 @@
   align-items: center;
 }
 
-.item-flex {
-  display: flex;
-}
-
-.navbar-down {
-  bottom: 0;
-  position: fixed;
-  z-index: 997;
+.jc-between {
+  justify-content: space-between;
 }
 
 .navbar-down .material-icons {
@@ -94,4 +93,42 @@
 .photo img {
   width: 30%;
   border-radius: 100%;
+}
+
+.space {
+  margin: 0.5em;
+}
+
+.content {
+  margin-bottom: 5em;
+}
+
+.carousel {
+  margin-top: 15vh;
+}
+
+#team {
+  height: 13vh;
+  width: 13vw;
+}
+
+/* navbar down */
+
+.navbar-down {
+  bottom: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+.left {
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+.collection {
+  padding-bottom: 3em;
+}
+
+.icon-style {
+  padding-top: .6em;
 }
