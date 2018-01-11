@@ -61,7 +61,7 @@ $(document).ready(function() {
       console.log(eventValue);
     });
   });
-
+  //  NO FUNCIONA
   // Evento para el botón Acceso con Google
   $google.on('click', function() {
     firebase.auth().signInWithPopup(provider).then(function(result) {
@@ -81,9 +81,10 @@ $(document).ready(function() {
     };
     firebase.database().ref('speak-up/' + user.uid).set(usuario);
   };
-
+  //  FALTA FUNCIONALIDAD
   // Evento para botón Sign Up
   $signup.on('click', function() {
 
+  
   });
 });
