@@ -13,16 +13,16 @@
 
 #welcome {
   font-family: 'Pacifico', cursive;
-  font-size: 3em;  
+  font-size: 3em;
 }
 
 .speak {
   font-family: 'Passion One', cursive;
-  font-size: 6em; 
+  font-size: 6em;
 }
 
 .bg-city {
-  background-image: url('../assets/images/giphy.gif');  
+  background-image: url('../assets/images/giphy.gif');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position:center center;
@@ -62,7 +62,7 @@
 
 /*clases para login.html*/
 .font-1 {
-  font-family: 'Passion One', cursive;  
+  font-family: 'Passion One', cursive;
 }
 .m-top8{
   margin-top: 8vh;
@@ -71,13 +71,17 @@
   top: 0;
   position: fixed;
   z-index: 997;
-  font-family: 'Passion One', cursive;  
+  font-family: 'Passion One', cursive;
   font-size: 3em;
 }
+
 .container-flex-row {
+  padding: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  align-content: center;
+
 }
 .m-top15 {
   margin-top: 15vh;
@@ -193,4 +197,13 @@
 
 .icon-style {
   padding-top: .6em;
+}
+
+@media (min-width: 992px) {
+ .menu-hambuger{
+   display: none;
+ }
+ .create-comment-icon{
+   margin-left: 90%;
+ }
 }
