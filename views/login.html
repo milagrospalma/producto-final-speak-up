@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
-	<meta name="google-signin-client_id" content="950697330767-613ukc0sbr4du4h8aalid6nqcp6hvtvi.apps.googleusercontent.com">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">		
-	<link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico|Passion+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bungee|Lalezar" rel="stylesheet">
 	<link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
 	<link rel="stylesheet" href="../css/main.css">
   <title>Speak Up</title>
@@ -17,52 +16,49 @@
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper indigo container-flex-row">
-          <p>Speak Up</p>
+          <p>Speak Up!</p>
         </div>
       </nav>
     </div>
 	</div>
 	<!-- Slider panel -->
 	<section>
-		<div class="container">
-			<div class="carousel carousel-slider center m-top15 z-depth-4" data-indicators="true">
-				<div class="carousel-item #ffa726 orange lighten-1 white-text" href="#one!">
-					<h2>BIENVENIDO/WELCOME!</h2>
-					<p class="white-text"><em>Speak up</em> es una plataforma para aprender idiomas gratuita y que permite el intercambio cultural en donde los usuarios enseñan, aprenden y practican idiomas.</p>				
+		<div class="container flex center-align m-top8 vh80">
+			<div class="row">
+				<div class="col s12">
 					<br>
-					<div class="bg-books bg-img"></div>
-					<div class="bg-world bg-img"></div>
+					<h4 class="indigo-text ">Login</h4>
 				</div>
-				<div class="carousel-item #8bc34a light-green white-text" href="#two!">
-					<h2>EN TU COMPUTADORA O EN DONDE ESTES!</h2>
-					<p class="white-text"><em>Speak up</em> funciona tanto en tu computadora como en tu dispositivo móbil.</p>
-					<br>
-					<div class="bg-img bg-pc"></div>
-					<div class="bg-img bg-phone"></div>
+				<div class="row">						
+					<div class="col s12">
+						<img src="../assets/images/user.svg" class="user">
+					</div>
 				</div>
-				<div class="carousel-item amber white-text" href="#three!">
-					<h2>CHATEA ,COMPARTE Y APRENDE!</h2>
-					<p class="white-text">Estaras siempre en contacto de tus <em>Speakfriends</em>. Chatea ,comparte imágenes y publicaciones.</p>
-					<br>
-					<div class="bg-img bg-ubication"></div>
-					<div class="bg-img bg-people"></div>
+				<div class="row">						
+					<div class="input-field col s12">
+						<input id="email" type="email" class="validate">
+						<label for="email">Email</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="password" type="password" class="validate">
+						<label for="password">Password</label>
+					</div>
+				</div>
+				<a id="login" href="newsfeed.html" class="waves-effect waves-light btn" disabled>LOGIN</a>
+				<!-- <div class="g-signin2" data-onsuccess="onSignIn">
+					<a id="google-login" class="waves-effect #e0f2f1 teal lighten-5 grey-text darken-3-text waves-light btn"><i class="fa fa-google-plus-square" aria-hidden="true"></i> Sign in with Google</a>
+				</div> -->
 				</div>
 			</div>
 		</div>
 	</section>
-	<footer>
-		<div class="container flex">
-			<div class="row">
-				<div class="col s12 item-flex">
-					<a class="btn waves-effect indigo lighten-1 m-top5" href="register.html">LOGIN NOW!</a>
-				</div>
-			</div>
-		</div>
-	</footer>
-
 	<!-- Linkeando archivos -->
 	<script type="text/javascript" src="../vendors/jquery/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
-	<script src="../js/login.js"></script>
+	<!-- <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script> -->
+	<!-- <script src="../js/firebase.js"></script> -->
+	<script src="../js/register.js"></script>
 </body>
 </html>
