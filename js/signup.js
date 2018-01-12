@@ -1,8 +1,8 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Elementos
   var $email = $('#email');
   var $password = $('#password');
-  var $login = $('#login');
+  var $signup = $('#signup');
 
   // Declarando e inicializando variables
   var user = null;
@@ -16,17 +16,17 @@ $(document).ready(function() {
   // Activa el button
   function onButton() {
     if (validatedEmail && validatedPwd) {
-      $login.attr('disabled', false);
+      $signup.attr('disabled', false);
     }
   }
   // Desactiva el button
   function offButton() {
-    $login.attr('disabled', 'disabled');
+    $signup.attr('disabled', 'disabled');
   }
 
   // Evento para email
-  $email.on('input', function() {
-    if ($(this).val() === localStorage.email) {
+  $email.on('input', function () {
+    if (REGEXEMAIL.test($(this).val())) {
       validatedEmail = true;
       onButton();
     } else {
@@ -36,8 +36,8 @@ $(document).ready(function() {
   });
 
   // Evento para password
-  $password.on('input', function() {
-    if ($(this).val() === localStorage.password) {
+  $password.on('input', function () {
+    if ($password.val().length >= MINLENGTH) {
       validatedPwd = true;
       onButton();
     } else {
@@ -47,10 +47,11 @@ $(document).ready(function() {
   });
 
   // Evento para el boton Log In
-  $login.on('click', function(event) {
+  $signup.on('click', function(event) {
     event.preventDefault();
-    if (validatedEmail && validatedPwd) {
-      window.location.href = 'newsfeed.html';
-    }
+    localStorage.email = $email.val();
+    localStorage.password = $password.val();
+    alert('¡Felicidades! Tu registro fue exitoso :)');
+    window.location.href = 'welcome.html';
   });
 });
