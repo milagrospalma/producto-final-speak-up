@@ -51,7 +51,6 @@ $(document).ready(function () {
     event.preventDefault();
     localStorage.email = $email.val();
     localStorage.password = $password.val();
-    alert('¡Felicidades! Tu registro fue exitoso :)');
-    window.location.href = 'welcome.html';
+    window.location.href = 'signup-form.html';
   });
 });

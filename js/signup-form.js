@@ -94,6 +94,8 @@ $(document).ready(function() {
     localStorage.llearn = llearn;
     localStorage.biography = $biography.val();
     localStorage.interest = $interest.val();
+    alert('¡Felicidades! Tu registro fue exitoso :)');
+    window.location.href = 'newsfeed.html'
   });
 
   // Activando boton 
