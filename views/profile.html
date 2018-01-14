@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +11,161 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css">
 </head>
-<body class="vh100">
+
+<body class="high">
   <main>
     <!-- Navbar -->
     <div class="navbar-fixed">
       <nav class="indigo">
-        <div class="nav-wrapper">
-          <a class="btn-style material-icons left back space">arrow_back</a>
-          <a class="brand-logo">Mis posts</a>
+        <div class="nav-wrapper container-flex-row left">
+          <a class="btn-style material-icons left back">arrow_back</a>
+          <h4>Perfil</h4>
         </div>
       </nav>
     </div>
-    <!-- Contenido post que hizo el usuario en newsfeed-->
-    <div class="container">
-      <div class="info">
-      </div>        
+    <!-- Content -->
+    <div id="content" class="content data-form">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="photo container-flex-row">
+              <img src="../assets/images/user.svg" alt="Foto">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 center-align">
+            <input type="file" accept="image/*">                
+            <input type="submit" id="submit" class="btn">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col offset-s1 s10">
+            <div class="information">
+              <div class="input-field">
+                <select>
+                  <option value="" disabled selected>Elige una ópcion</option>
+                  <option value="1">Femenino</option>
+                  <option value="2">Maculino</option>
+                  <option value="3">Otro</option>
+                </select>
+                <label>Sexo</label>
+              </div>
+              <div class="birthday">
+                <div class="input-field">
+                  <!-- <span class="fa fa-birthday-cake"></span> -->
+                  <input placeholder="dd/mm/aaaa" id="birthday" type="text" class="validate">
+                  <label>Cumpleaños</label>
+                </div>
+              </div>
+              <div class="country">
+                <div class="input-field">
+                  <!-- <span class="fa fa-globe"></span> -->
+                  <input placeholder="Perú, Brasil, México, Chile, etc." id="country" type="text" class="validate">
+                  <label>País</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col offset-s1 s10">
+            <div class="language">
+              <ul>
+                <li>
+                  <div class="input-field">
+                    <input placeholder="Español, Inglés, Francés, etc." id="lenguage1" type="text" class="validate">
+                    <label>Mi idioma nativo</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="input-field">
+                    <input placeholder="Español, Inglés, Francés, etc." id="lenguage2" type="text" class="validate">
+                    <label>Quiero aprender</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col offset-s1 s10">
+            <div class="biography">
+              <div class="input-field">
+                <input placeholder="Soy estudiante, me gusta aprender, etc." id="biography" type="text" class="validate">
+                <label>Sobre mí</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col offset-s1 s10">
+            <div class="like">
+              <div class="input-field">
+                <input placeholder="Tecnología, música, cine, etc." id="interest" type="text" class="validate">
+                <label>Me interesa</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 center-align">
+            <button class="btn waves-effect waves-light" type="submit" name="action" id="btnsave"disabled>Save
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+
+
+    <!-- Profile create-->
+    <div class="container all-information">
+      <div class="container principal">
+        <div class="row">
+          <div class="col s4">
+            <img src="" alt="">
+          </div>
+          <div class="col s8">
+            <div class="name"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container information">
+        <div class="row">
+          <div class="col s12">
+            <div class="col s4" id="divsex">
+              <p>Sexo :</p>
+            </div>
+            <div class="col s4" id="divbirthday">
+              <p>Cumpleaños :</p>
+            </div>
+            <div class="col s4">
+              <p>País :</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <div class="col s4">
+              <p>Mi idioma nativo :</p>
+            </div>
+            <div class="col s4">
+              <p>Quiero aprender :</p>
+            </div>
+            <div class="col s4">
+              <p>Sobre mi :</p>
+            </div>  
+          </div>
+        </div>      
+        <div class="row">
+          <div class="col s12">
+            <p>Me interesa :</p>
+          </div>
+        </div>    
+      </div>   
+    </div>
+
     <!-- Menu-bottom -->
     <div class="navbar-down">
       <div class="navbar-fixed">
@@ -45,4 +185,5 @@
   <script src="../vendors/materialize/js/materialize.min.js"></script>
   <script src="../js/profile.js"></script>
 </body>
+
 </html>

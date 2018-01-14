@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,56 +10,36 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css">
 </head>
-<body class="vh100">
+
+<body class="high">
   <main>
     <!-- Navbar -->
     <div class="navbar-fixed">
       <nav class="indigo">
         <div class="nav-wrapper container-flex-row jc-between">
           <a href="#" class="material-icons left space">menu</a>
-          <a href="#" class="brand-logo">Noticias</a>
+          <a href="#" class="brand-logo">Newsfeed</a>
           <a href="#" class="material-icons right space" id="write" >create</a>
         </div>
       </nav>
     </div>
     <!-- Header -->
     <div class="hide" id="post-box">
-      <div class="container">
-        <div class="row">
-          <form class="col s12 ">
-            <div class = "row">
-              <div class = "input-field col s12">
-                <input placeholder = "¿Qué quieres compartir?" type = "text"
-                  class = "validate text-post">
-                <label for = "post"></label>
-              </div>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">¿Qué quieres compartir?</label>
+              <a class="btn" disabled >Publicar</a>
             </div>
-            <div class = "row">
-              <div class="col s12">
-                <label> Sube una foto </label>
-              </div>
-              <div class = "file-field input-field col s12">
-                <div class = "btn">
-                  <span></span>
-                  <span><a href="#" class="material-icons camera">camera_alt</a></span>
-                  <input type = "file" accept="image/*" class="select-img"/>
-                </div>
-                <div class = "file-path-wrapper">
-                  <input class = "file-path validate img-info" type = "text" placeholder = "Upload file"/>
-                </div>
-              </div> 
-            </div>
-            <a class="btn btn-submit" disabled >Publicar</a>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
     <!-- Content -->
     <div class="container">
-      <div class="content col s12">
-      </div>
-      <div class="info">
-      </div>        
+      <div id="content" class=" col s12 content"></div>
     </div>
     <!-- Menu-bottom -->
     <div class="navbar-down">
@@ -77,7 +58,7 @@
   <!-- Scripts -->
   <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="../vendors/materialize/js/materialize.min.js"></script>
-  <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
   <script src="../js/newsfeed.js"></script>
 </body>
+
 </html>

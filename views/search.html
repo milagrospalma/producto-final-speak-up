@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +10,53 @@
   <link rel="stylesheet" href="../css/main.css">
   <title>Search</title>
 </head>
-<body class="vh100">
+
+<body class="high">
   <!-- Navbar -->
-  <div class="navbar-fixed">
+  <div class="navbar-fixed nav-style">
     <nav class="indigo">
-      <div class="nav-wrapper">
-        <a href="#" class="btn-style material-icons left back space">arrow_back</a>
-        <a class="brand-logo">Buscar</a>
+      <div class="nav-wrapper ">
+        <a class="btn-style material-icons left back">arrow_back</a>
+        <h4 class>Search</h4>
       </div>
     </nav>
   </div>
+
+
   <main class="container">
     <!-- Input -->
-    <h5 class="center-align">Quiero practicar...</h5>
+    <h4 class="center-align">I want to practice</h4>
     <div class="input-field col s12">
       <select>
-        <option value="0" disabled selected>Elige un idioma</option>
+        <option value="0" disabled selected>Elige tu idioma</option>
         <option value="1" data-icon="../assets/icon/United.png">Inglés</option>
-        <option value="2" data-icon="../assets/icon/France.png">Francés</option>
+        <option value="2" data-icon="../assets/icon/France.png">Frances</option>
         <option value="3" data-icon="../assets/icon/Italy.png">Italiano</option>
       </select>
+      <!-- <label></label> -->
     </div>
     <!-- Container friends -->
-    <div id="container-friends" class="friend-box">
-      <!-- Modal Trigger -->
-      <div id="user" href="#modal1" data-target="modal1" class="modal-trigger">
+    <div class="friend-box">
+      <div class="friends" data-target="modal1" class="modal-trigger">
+        <!-- El data target aquí activara los modales -->
       </div>
     </div>
   </main>
+  <!-- Modal Trigger -->
+  <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+   <button data-target="modal1" class="btn modal-trigger">Modal</button> -->
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
   <!-- Menu-bottom -->
   <div class="navbar-down">
     <div class="navbar-fixed">
@@ -50,19 +70,9 @@
       </nav>
     </div>
   </div>
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Speakfriend</h4>
-      <p>Información</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Seguir</a>
-    </div>
-  </div>
   <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="../vendors/materialize/js/materialize.min.js"></script>
-  <script src="../js/data.js"></script>
   <script src="../js/search.js"></script>
 </body>
+
 </html>

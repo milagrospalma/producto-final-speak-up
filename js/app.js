@@ -1,3 +1,5 @@
 $(document).ready(function(){
-	setTimeout(function(){window.location.href = 'views/welcome.html'},2900);
-})
+  $('.materialboxed').materialbox();
+  $('.slider').slider();
+  $('.slider').slider('start');
+  });
