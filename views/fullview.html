@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico|Passion+One" rel="stylesheet">    <link rel="stylesheet" href="../vendors/css/materialize.min.css">
+    <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">		
+		<link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../assets/images/speakup.ico">    
+    <title>Speak Up</title>
+</head>
+<body class="high">
+  <main>
+    <!-- Navbar -->
+    <div class="navbar-fixed container-flex-row">
+      <nav class="indigo">
+        <div class="nav-wrapper container-flex-row">
+            <div class="row">
+                <div class="m-top4 offset-s3 col s7 col m4 col l3"><img src="../assets/images/logo.png"  id="logo-nav" alt="logo" class="responsive-img item-flex"></div>
+              </div>
+        </div>
+      </nav>
+    </div>
+     <!-- Header -->
+     <div id="post-box">
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">¿Qué quieres compartir?</label>
+                <a class="btn" disabled >Publicar</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="container">
+        <div id="content" class=" col s12 content"></div>
+      </div>
+
+       <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+  
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+            
+	<!-- Menu-bottom -->
+    <div class="navbar-down">
+      <div class="navbar-fixed">
+        <nav class="indigo lighten-1">
+          <div class="nav-wrapper container-flex-row">
+						<a href="../views/newsfeed.html" class="material-icons">home</a>
+            <a href="../views/search.html" class="material-icons">search</a>
+            <a href="../views/messages.html" class="material-icons">message</a>
+            <a href="../views/profile.html" class="material-icons">person</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+	<!-- Linkeando archivos -->
+	<script type="text/javascript" src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
+</body>
+</html>
