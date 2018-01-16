@@ -32,3 +32,6 @@ Speak up! esta pensada para aquellas personas que estudian o tiene conocimiento 
 ## Desarrollado con:
 
 `HTML5` `Jquery` `CSS3` `Materialize` `Firebase`
+
+## Producto modificado
+[Speak-Up](https://github.com/milagrospalma/speak-up)
